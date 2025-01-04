@@ -1,0 +1,129 @@
+/* Основные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: #c7d5e0;
+    line-height: 1.5;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #171a21;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #c7d5e0;
+    font-weight: bold;
+}
+
+/* Главная страница */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #2a475e;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3a9bdc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2a8ac4;
+}
+
+/* Страница товара */
+.product {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.product-image {
+    margin: 20px 0;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #171a21;
+    color: #c7d5e0;
+    margin-top: auto;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .product-image img {
+        width: 90%;
+    }
+}
