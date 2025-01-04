@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар - GameVerse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">GameVerse</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="product.html">Товар</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <h1>Случайный ключ Steam</h1>
+            <div class="product-image">
+                <img src="product.jpg" alt="Случайный ключ Steam">
+            </div>
+            <p>Купите случайный ключ Steam всего за 199 рублей</p>
+            <form method="POST" action="/buy-key">
+                <button class="btn" type="submit">Купить</button>
+            </form>
+
+            <!-- Этот блок будет заменяться сервером -->
+            <div class="result">
+                ${keyResult}
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 GameVerse</p>
+    </footer>
+</body>
+</html>
